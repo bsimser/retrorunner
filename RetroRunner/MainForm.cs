@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using RetroRunner.Properties;
 
 namespace RetroRunner
 {
@@ -35,7 +36,6 @@ namespace RetroRunner
             // create customconfig directory if it doesn't exist
             // if wikisite is empty load in the background
             // otherwise load xml file
-
         }
 
         private void MainForm_Shown(object sender, EventArgs e)
@@ -97,7 +97,6 @@ namespace RetroRunner
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -116,12 +115,9 @@ namespace RetroRunner
         private void resetAllGamePlayInfoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (
-                MessageBox.Show(
-                    "Are you sure that you want to reset the times played and last date played for all programs?",
-                    "Reset all play info", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
-            {
+                MessageBox.Show(Resources.ResetDialogText, Resources.ResetDialogTitle, MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question) == DialogResult.No)
                 return;
-            }
         }
     }
 }
