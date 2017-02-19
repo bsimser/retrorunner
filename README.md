@@ -1,10 +1,12 @@
-# retrorunner
+# RetroRunner
 RetroRunner is a free, easy-to-use DOSBox front end for Windows.
 
 * Make it easy to use as possible
 * Provide context-sensitive help and explanatory text where it's needed most for DOSBox newbies
 * Simplify the process of finding game information
 * Support the major features and usage scenarios of DOSBox
+
+RetroRunner is based on [CBoxRun](https://cboxrun.wordpress.com/), a WinForms application that no longer works and has been abandoned.
 
 ## Easy to Use
 * Download game info and screenshots for over 1500 games from Wikipedia
