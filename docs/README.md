@@ -26,3 +26,7 @@ RetroRunner is based on [CBoxRun](https://cboxrun.wordpress.com/), a WinForms ap
 * Physical drive mapping is supported
 * Floppy disk images are supported
 * Boot images are supported
+
+## Support
+Having trouble with RetroRunning? Notice a bug? Check-out [frequently asked questions (FAQ)](https://github.com/bsimser/retrorunner/wiki) and if you don't see your issue resolved, 
+please [open an issue in GitHub](https://github.com/bsimser/retrorunner/issues/new).
