@@ -67,6 +67,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(679, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // toolStrip1
             // 
@@ -115,6 +116,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -159,6 +161,7 @@
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(23, 22);
             this.AddButton.Text = "Add a new program";
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // EditButton
             // 
@@ -168,6 +171,7 @@
             this.EditButton.Name = "EditButton";
             this.EditButton.Size = new System.Drawing.Size(23, 22);
             this.EditButton.Text = "Edit the selected program";
+            this.EditButton.Click += new System.EventHandler(this.EditButton_Click);
             // 
             // DeleteButton
             // 
@@ -177,6 +181,7 @@
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(23, 22);
             this.DeleteButton.Text = "Delete the selected program";
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // toolStripSeparator1
             // 
@@ -191,6 +196,7 @@
             this.CreateConfigForSelection.Name = "CreateConfigForSelection";
             this.CreateConfigForSelection.Size = new System.Drawing.Size(23, 22);
             this.CreateConfigForSelection.Text = "Create a custom config file \\r\\nfor the selected program";
+            this.CreateConfigForSelection.Click += new System.EventHandler(this.CreateConfigForSelection_Click);
             // 
             // EditConfigForSelection
             // 
@@ -200,6 +206,7 @@
             this.EditConfigForSelection.Name = "EditConfigForSelection";
             this.EditConfigForSelection.Size = new System.Drawing.Size(23, 22);
             this.EditConfigForSelection.Text = "Edit the selected program\'s\\r\\ncustom config file";
+            this.EditConfigForSelection.Click += new System.EventHandler(this.EditConfigForSelection_Click);
             // 
             // DeleteConfigForSelection
             // 
@@ -209,6 +216,7 @@
             this.DeleteConfigForSelection.Name = "DeleteConfigForSelection";
             this.DeleteConfigForSelection.Size = new System.Drawing.Size(23, 22);
             this.DeleteConfigForSelection.Text = "Delete the selected program\'s \\r\\ncustom config file";
+            this.DeleteConfigForSelection.Click += new System.EventHandler(this.DeleteConfigForSelection_Click);
             // 
             // ViewSelector
             // 
@@ -219,6 +227,7 @@
             "Box Art"});
             this.ViewSelector.Name = "ViewSelector";
             this.ViewSelector.Size = new System.Drawing.Size(121, 25);
+            this.ViewSelector.SelectedIndexChanged += new System.EventHandler(this.ViewSelector_SelectedIndexChanged);
             // 
             // ViewLabel
             // 
@@ -240,6 +249,7 @@
             this.DosBoxConsoleButton.Name = "DosBoxConsoleButton";
             this.DosBoxConsoleButton.Size = new System.Drawing.Size(23, 22);
             this.DosBoxConsoleButton.Text = "Launch the DOSBox console";
+            this.DosBoxConsoleButton.Click += new System.EventHandler(this.DosBoxConsoleButton_Click);
             // 
             // MainPanel
             // 
@@ -260,6 +270,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
