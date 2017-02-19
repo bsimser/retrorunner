@@ -28,5 +28,5 @@ RetroRunner is based on [CBoxRun](https://cboxrun.wordpress.com/), a WinForms ap
 * Boot images are supported
 
 ## Support
-Having trouble with RetroRunning? Notice a bug? Check-out [frequently asked questions (FAQ)](https://github.com/bsimser/retrorunner/wiki) and if you don't see your issue resolved, 
+Having trouble with RetroRunning? Notice a bug? Check-out [frequently asked questions (FAQ)](https://github.com/bsimser/retrorunner/wiki) and if you don't [see your issue](https://github.com/bsimser/retrorunner/issues) resolved, 
 please [open an issue in GitHub](https://github.com/bsimser/retrorunner/issues/new).
