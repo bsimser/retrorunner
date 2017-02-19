@@ -1,4 +1,6 @@
-# RetroRunner
+## Welcome to RetroRunner
+
+A simple front-end for [DOSBox](https://www.dosbox.com/) to launch your favorite old MS-DOS games.
 
 Features include:
 
