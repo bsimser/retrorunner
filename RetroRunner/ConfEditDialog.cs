@@ -12,6 +12,8 @@ namespace RetroRunner
 {
     public partial class ConfEditDialog : Form
     {
+        public string SuccessMessage { get; set; }
+
         public ConfEditDialog()
         {
             InitializeComponent();

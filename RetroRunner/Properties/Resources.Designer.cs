@@ -61,6 +61,15 @@ namespace RetroRunner.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        internal static string DialogSuccessTitle {
+            get {
+                return ResourceManager.GetString("DialogSuccessTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Are you sure that you want to reset the times played and last date played for all programs?.
         /// </summary>
         internal static string ResetDialogText {

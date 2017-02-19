@@ -134,6 +134,7 @@
             this.dOSBoxDefaultConfigFileToolStripMenuItem.Name = "dOSBoxDefaultConfigFileToolStripMenuItem";
             this.dOSBoxDefaultConfigFileToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
             this.dOSBoxDefaultConfigFileToolStripMenuItem.Text = "&DOSBox default config file...";
+            this.dOSBoxDefaultConfigFileToolStripMenuItem.Click += new System.EventHandler(this.dOSBoxDefaultConfigFileToolStripMenuItem_Click);
             // 
             // dOSBoxDefaultkeyboardMappingToolStripMenuItem
             // 
@@ -154,6 +155,7 @@
             this.aboutRetroRunnerToolStripMenuItem.Name = "aboutRetroRunnerToolStripMenuItem";
             this.aboutRetroRunnerToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.aboutRetroRunnerToolStripMenuItem.Text = "&About RetroRunner...";
+            this.aboutRetroRunnerToolStripMenuItem.Click += new System.EventHandler(this.aboutRetroRunnerToolStripMenuItem_Click);
             // 
             // AddButton
             // 

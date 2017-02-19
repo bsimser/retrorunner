@@ -119,5 +119,25 @@ namespace RetroRunner
                     MessageBoxIcon.Question) == DialogResult.No)
                 return;
         }
+
+        private void aboutRetroRunnerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var dialog = new AboutDialog())
+            {
+                dialog.ShowDialog();
+            }
+        }
+
+        private void dOSBoxDefaultConfigFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var dialog = new ConfEditDialog())
+            {
+                if (dialog.ShowDialog() != DialogResult.OK)
+                {
+                    return;
+                }
+                MessageBox.Show(dialog.SuccessMessage, Resources.DialogSuccessTitle, MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+        }
     }
 }
