@@ -52,6 +52,7 @@
     <Compile Include="AboutDialog.Designer.cs">
       <DependentUpon>AboutDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="BootDriveInfo.cs" />
     <Compile Include="BoxArt.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -82,6 +83,7 @@
     <Compile Include="ConsoleOptionsDialog.Designer.cs">
       <DependentUpon>ConsoleOptionsDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="DosProgram.cs" />
     <Compile Include="DriveMountDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +138,7 @@
     <Compile Include="MobyGamesSearchResultsDialog.Designer.cs">
       <DependentUpon>MobyGamesSearchResultsDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="MountedDrive.cs" />
     <Compile Include="OptionsDialog.cs">
       <SubType>Form</SubType>
     </Compile>

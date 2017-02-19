@@ -104,12 +104,14 @@
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
             this.settingsToolStripMenuItem.Text = "&Settings...";
+            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
             // resetAllGamePlayInfoToolStripMenuItem
             // 
             this.resetAllGamePlayInfoToolStripMenuItem.Name = "resetAllGamePlayInfoToolStripMenuItem";
             this.resetAllGamePlayInfoToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
             this.resetAllGamePlayInfoToolStripMenuItem.Text = "&Reset all game play info...";
+            this.resetAllGamePlayInfoToolStripMenuItem.Click += new System.EventHandler(this.resetAllGamePlayInfoToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -258,7 +260,6 @@
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(679, 353);
             this.MainPanel.TabIndex = 2;
-            this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // MainForm
             // 

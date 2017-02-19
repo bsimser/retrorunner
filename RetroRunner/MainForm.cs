@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RetroRunner
@@ -48,9 +41,9 @@ namespace RetroRunner
         private void MainForm_Shown(object sender, EventArgs e)
         {
             // if program count != 0 return
-            using (var welcomeDialog = new WelcomeDialog())
+            using (var dialog = new WelcomeDialog())
             {
-                welcomeDialog.ShowDialog();
+                dialog.ShowDialog();
             }
         }
 
@@ -59,49 +52,47 @@ namespace RetroRunner
             // save settings, size, etc.
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void AddButton_Click(object sender, EventArgs e)
         {
-
+            DosProgram.AddProgram();
         }
 
         private void EditButton_Click(object sender, EventArgs e)
         {
-
+            DosProgram.EditProgram();
         }
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-
+            DosProgram.DeleteProgram();
         }
 
         private void CreateConfigForSelection_Click(object sender, EventArgs e)
         {
-
+            DosProgram.CreateCustomConfigFile();
         }
 
         private void EditConfigForSelection_Click(object sender, EventArgs e)
         {
-
+            DosProgram.EditCustomConfigFile();
         }
 
         private void DeleteConfigForSelection_Click(object sender, EventArgs e)
         {
-
+            DosProgram.DeleteCustomConfigFile();
         }
 
         private void DosBoxConsoleButton_Click(object sender, EventArgs e)
         {
-
+            using (var dialog = new ConsoleOptionsDialog())
+            {
+                dialog.ShowDialog();
+            }
         }
 
         private void ViewSelector_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            // set the mainpanel controls based on details, screenshots, or box art selection
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -112,6 +103,25 @@ namespace RetroRunner
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var dialog = new OptionsDialog())
+            {
+                dialog.ShowDialog();
+            }
+        }
+
+        private void resetAllGamePlayInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (
+                MessageBox.Show(
+                    "Are you sure that you want to reset the times played and last date played for all programs?",
+                    "Reset all play info", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                return;
+            }
         }
     }
 }
