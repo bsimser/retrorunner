@@ -52,6 +52,18 @@
     <Compile Include="AboutDialog.Designer.cs">
       <DependentUpon>AboutDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="BoxArt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BoxArt.Designer.cs">
+      <DependentUpon>BoxArt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BoxArtPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BoxArtPanel.Designer.cs">
+      <DependentUpon>BoxArtPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConfEditDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +93,24 @@
     </Compile>
     <Compile Include="ErrorDialog.Designer.cs">
       <DependentUpon>ErrorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileSystemDriveMount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FileSystemDriveMount.Designer.cs">
+      <DependentUpon>FileSystemDriveMount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GridPanel.Designer.cs">
+      <DependentUpon>GridPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageDriveMount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ImageDriveMount.Designer.cs">
+      <DependentUpon>ImageDriveMount.cs</DependentUpon>
     </Compile>
     <Compile Include="ImageSelectDialog.cs">
       <SubType>Form</SubType>
@@ -112,6 +142,12 @@
     <Compile Include="OptionsDialog.Designer.cs">
       <DependentUpon>OptionsDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="PhysicalDriveMount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PhysicalDriveMount.Designer.cs">
+      <DependentUpon>PhysicalDriveMount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="ProgramWizard.cs">
       <SubType>Form</SubType>
@@ -126,11 +162,41 @@
     <Compile Include="RelativePathHelpDialog.Designer.cs">
       <DependentUpon>RelativePathHelpDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screenshot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Screenshot.Designer.cs">
+      <DependentUpon>Screenshot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenshotPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScreenshotPanel.Designer.cs">
+      <DependentUpon>ScreenshotPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="WelcomeDialog.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="WelcomeDialog.Designer.cs">
       <DependentUpon>WelcomeDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WikipediaImage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WikipediaImage.Designer.cs">
+      <DependentUpon>WikipediaImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WizardInnerPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WizardInnerPage.Designer.cs">
+      <DependentUpon>WizardInnerPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WizardIntroPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WizardIntroPage.Designer.cs">
+      <DependentUpon>WizardIntroPage.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AboutDialog.resx">
       <DependentUpon>AboutDialog.cs</DependentUpon>
