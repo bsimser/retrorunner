@@ -1,5 +1,6 @@
 # RetroRunner
-RetroRunner is a free, easy-to-use DOSBox front end for Windows.
+
+Features include:
 
 * Make it easy to use as possible
 * Provide context-sensitive help and explanatory text where it's needed most for DOSBox newbies
