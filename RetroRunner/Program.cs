@@ -15,9 +15,9 @@ namespace RetroRunner
         {
             Task.Run(async () =>
             {
-                using (var mgr = new UpdateManager("https://github.com/bsimser/retrorunner"))
+                using (var mgr = UpdateManager.GitHubUpdateManager("https://github.com/bsimser/retrorunner"))
                 {
-                    await mgr.UpdateApp();
+                    await mgr.Result.UpdateApp();
                 }
             });
             Application.EnableVisualStyles();
