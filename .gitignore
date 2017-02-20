@@ -22,7 +22,7 @@ bld/
 [Ll]og/
 
 # Squirrel files
-![Rr]eleases/
+![Rr]eleases/*
 ![Rr]eleases/*.exe
 ![Rr]eleases/*.nupkg
 
