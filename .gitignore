@@ -23,6 +23,8 @@ bld/
 
 # Squirrel files
 ![Rr]eleases/
+![Rr]eleases/*.exe
+![Rr]eleases/*.nupkg
 
 # Visual Studio 2015 cache/options directory
 .vs/
